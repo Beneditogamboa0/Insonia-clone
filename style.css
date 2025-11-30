@@ -1,0 +1,214 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html{
+    height: 100dvh;
+    width: 100dvw;
+    overflow-x: hidden;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: blueviolet;
+    height: 60px;
+    border-bottom: 1px solid black;
+    font-size: clamp(.5rem,4dvw,1rem);
+}
+header>nav{
+    display: flex;
+    gap: 1rem;
+}
+header>nav>a{
+    text-decoration: none;
+    color: white;
+}
+header>span{
+    font-size: 1.7rem;
+    color: white;
+    font-weight: 600;
+}
+.hello{
+    height: fit-content;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 105px 0;
+}
+.hello>div{
+    width: 500px;
+    height: 450px;
+    border-radius: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: .5rem;
+    position: relative;
+    color: white;
+    font-weight: 600; 
+}
+.hello>div:nth-child(1)>input{
+    width: 40%;
+    background-color: white;
+}
+.hello>div:nth-child(2){
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.hello>div:nth-child(2)>img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+/*Aqui terminou uma parte*/
+.pub1{
+    height: fit-content;
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.pub1>section{
+    height: 180px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+.pub1 img{
+    height: 50px;
+}
+.pub1 span{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+/*Publi_1 termina aqui*/
+.ea{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.ea_box{
+    width: 80%;
+    height: fit-content;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: .1rem;
+    position: relative;
+}
+.ea_box>div{
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.ea_box img{
+    height: 70%;
+    aspect-ratio: 1/1;
+}
+.ea_box button{
+    height: 35px;
+    width: 110px;
+    border-radius: 20px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.ea_phone{
+    background-color: white;
+    width: 60%;
+    height: 50%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    position: relative;
+}
+.ea_box span{
+    font-size: 1.3rem;
+    color: gray;
+}
+.ea_phone .h{
+    height: 30px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+.ea_box>span{
+    position: absolute;
+    top: -10px;
+    color: black;
+}
+/*Eletrónicos (ea) termina aqui*/
+footer{
+    height: 300px;
+    width: 80%;
+    margin: 10rem auto;
+    display: grid;
+    grid-template-rows: 5fr 1fr;
+    gap: 2rem;
+    border-top: 1px solid gray;
+}
+footer>div:nth-child(1){
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 1rem;
+}
+footer>div:nth-child(1)>div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.f_title{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+footer>div:nth-child(1)>div>input{
+    width: 60%;
+    height: 25px;
+    border: none;
+}
+footer>div:nth-child(1)>div>button{
+    width: 25%;
+    height: 35px;
+    background-color: blueviolet;
+    border: none;
+    color: white;
+}
+footer>div:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid gray;
+    width: 80%;
+    margin: 0 auto;
+}
+.f_com{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+.f_com img{
+    height: 25px;
+    aspect-ratio: 1/1;
+}
+/*footer termina aqui*/
